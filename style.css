@@ -5,7 +5,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 1fr 1fr;
     width: 100vw;
     height: 100vh;
@@ -22,16 +22,73 @@ body {
 
 .sidebarHeader {
     grid-row: 1 / 2;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.headerIcon {
+    grid-column: 1 / 2;
+    width: 22px;
+    height: 22px;
+    justify-self: center;
+    align-self: center;
+}
+
+.dashboard {
+    grid-column: 2 / 3;
+    display: grid;
+    justify-self: start;
+    align-items: center;
 }
 
 .sidebarNav {
     grid-row: 2 / 3;
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.navIcons {
+    grid-column: 1 / 2;
+    width: 18px;
+    height: 18px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.sidebarLinks {
+    grid-column: 2 / 3;
+    grid-row: 1 / 7;
+    display: grid;
+    justify-self: start;
+    align-items: center;
 }
 
 .sidebarHelp {
+    padding-top: 30px;
+    padding-bottom: 40px;
     grid-row: 3 / 4;
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.helpIcons {
+    grid-column: 1 / 2;
+    width: 18px;
+    height: 18px;
+    justify-self: center;
+    align-self: center;
+}
+
+.sidebarInfo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    display: grid;
+    justify-self: start;
+    align-items: center;
 }
 
 .header {
