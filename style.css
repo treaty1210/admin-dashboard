@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
@@ -129,6 +130,7 @@ body {
     align-items: start;
     position: relative;
     left: -18px;
+    margin-left: -20px;
 }
 
 .topBtns {
@@ -214,6 +216,7 @@ body {
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     height: 85vh;
     padding-top: 10px;
     padding-left: 26px;
@@ -284,6 +287,7 @@ body {
 
 .announcementTitle {
     align-self: center;
+    padding-left: 12px;
 }
 
 .announcements > :not(.announcementTitle) {
@@ -318,4 +322,35 @@ body {
 }
 .trending {
     display: grid;
+}
+
+.trendingTitle {
+    padding-left: 12px;
+    margin-bottom: -12px;
+}
+
+.trending > :not(.trendingTitle) {
+    background-color: white;
+    border: 1px solid  white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.trendingOne {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.trendingFour {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.trending > :not(.trendingTitle) > img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding-right: 12px;
 }
