@@ -134,6 +134,7 @@ body {
 }
 
 .topBtns {
+    padding-top: 10px;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
