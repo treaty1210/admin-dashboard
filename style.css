@@ -95,12 +95,12 @@ body {
 .header {
     background-color: #f0fdfa;
     grid-column: 2 / 4;
-    height: 33.33vh;
+    height: 20vh;
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 4px;
-    box-shadow: 0 4px 4px #d6d3d18e;
+    box-shadow: 0 4px 4px #acabaa8e;
 }
 
 .searchbar {
@@ -131,7 +131,61 @@ body {
     left: -18px;
 }
 
+.topBtns {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.notif {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.notif > img {
+    height: 24px;
+    width: 24px;
+}
+
+.profilePic {
+    justify-self: center;
+    align-self: center;
+}
+
+.profilePic > img {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.profile {
+    justify-self: start;
+    align-self: center;
+    position: relative;
+    left: -16px;
+}
+
+.btmBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btmBtns > button {
+    height: 26px;
+    width: auto;
+    border-radius: 26px;
+    border: 1px solid #10b981;
+    background-color: #10b981;
+    color: white;
+}
+
 .greetArea {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 0.2fr 3fr;
     align-content: center;
@@ -167,7 +221,7 @@ body {
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 66.67vh;
+    height: 80vh;
 }
 
 .projects {
