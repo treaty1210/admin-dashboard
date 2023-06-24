@@ -278,8 +278,44 @@ body {
 
 .announcements {
     display: grid;
+    grid-template-rows: repeat(auto-fit, 4);
+    margin-bottom: 10px;
 }
 
+.announcementTitle {
+    align-self: center;
+}
+
+.announcements > :not(.announcementTitle) {
+    background-color: white;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.announcementOne {
+    margin-top: 6px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 1px solid white;
+    border-bottom: 0.7px solid lightslategray;
+}
+
+
+.announcementTwo {
+    border: 1px solid white;
+    border-bottom: 0.7px solid lightslategray;
+}
+
+.announcementThree {
+    border: 1px solid white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.announcements > :not(.announcementTitle) > p {
+    font-size: 12px;
+    margin-top: -16px;
+}
 .trending {
     display: grid;
 }
